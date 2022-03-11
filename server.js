@@ -12,10 +12,6 @@ const code_execution = (req, res) => {
   const { secret_key } = req.params;
   const { type, data, intanceChoice } = req.body;
 
-  console.log(instance1);
-  console.log(instance2);
-  console.log(API_KEY);
-
   if (secret_key === API_KEY) {
     let instance = "";
     switch (type) {
